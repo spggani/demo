@@ -1,0 +1,9 @@
+provider "aws" {
+access_key = "AKIAUC2K3I27KTA45EXG"
+secret_key = "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"
+region = "ap-south-1"
+}
+resource "aws_instance" "terraform_demo" {
+ami = "ami-074dc0a6f6c764218"
+instance_type = "t2.micro"
+}
